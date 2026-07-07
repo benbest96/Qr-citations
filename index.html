@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Respect du matériel</title>
+
+<style>
+body{
+  font-family: Arial;
+  background:#eef4ff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin:0;
+}
+
+.box{
+  background:white;
+  padding:30px;
+  max-width:600px;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+h1{ color:#1a4fa3; }
+
+#quote{
+  font-size:22px;
+  margin:20px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h1>💻 Prenez soin du matériel</h1>
+  <div id="quote"></div>
+</div>
+
+<script>
+const quotes = [
+"Un ordinateur bien traité dure plus longtemps.",
+"Le matériel informatique est pour tous les élèves.",
+"Un câble tiré peut arrêter une classe entière.",
+"Luc 16:10 — Fidèle dans les petites choses.",
+"Respecter le matériel, c’est respecter les autres.",
+"Signalez les problèmes au lieu de les cacher."
+];
+
+function showQuote(){
+  const i = Math.floor(Math.random()*quotes.length);
+  document.getElementById("quote").innerText = quotes[i];
+}
+
+showQuote();
+</script>
+
+</body>
+</html>
